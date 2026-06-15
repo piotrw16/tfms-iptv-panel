@@ -1,0 +1,17 @@
+name = "tfms-iptv-panel"
+main = "src/worker.js"
+compatibility_date = "2026-06-04"
+workers_dev = true
+
+# Optional: set in Cloudflare dashboard or with `wrangler secret put TMDB_API_KEY`.
+# [vars]
+# TMDB_API_KEY = ""
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tfms-db"
+# Replace this after running: npm run d1:create
+database_id = "07ea4862-3ae2-4e81-8f27-96a427fae398"
+
+[observability]
+enabled = true
